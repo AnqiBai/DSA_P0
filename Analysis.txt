@@ -1,0 +1,33 @@
+Task0 - 
+Time Complexity:
+O(n)
+since both record lists are traversed once.
+
+Task1 - 
+Time Complexity:
+O(n)
+Since the average time complexity of the set add method is O(1), 
+and both lists are traversed.
+
+Task2 - 
+Time Complexity:
+O(n)
+Since the average time complexity of the dict add/get/set method is O(1), and the calls list is traversed.
+The timeRecord dict is traversed through which is of O(m) time complexity, where m is the count
+of phone numbers from the records, and m is less than n. So the average time complexity
+in total is O(n).
+
+Task3 - 
+Time Complexity:
+O(nlogn)
+The calls list is traversed once which is of O(n).
+The worst case, all call records are added to the call numbers set, and the call numebrs set is converted to a list.
+The sort of the list has O(nlogn) time complexity. 
+
+Task4 - 
+Time Complexity:
+O(n)
+Since the average time complexity of the set add method is O(1), 
+and both lists are traversed.
+
+
