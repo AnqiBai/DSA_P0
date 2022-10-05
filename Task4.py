@@ -58,8 +58,14 @@ for record in texts:
 # print(len(list(numStat.keys())))
 # expect 570
 print("These numbers could be telemarketers: ")
+resultList = []
 for num in numStat:
     curobj = numStat[num]
     if "calling" in curobj and "called" not in curobj \
             and "texting" not in curobj and "texted" not in curobj:
-        print(num)
+        resultList.append(num)
+
+# sort and print
+resultList.sort()
+for num in resultList:
+    print(num)

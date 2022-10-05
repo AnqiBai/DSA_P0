@@ -56,8 +56,8 @@ for record in calls:
     if caller[0:5] == "(080)":
         callee = record[1]
         countAll += 1
-        if callee[0] == "(" and callee[4] == ")":
-            resultA.add(callee[1:4])
+        if callee[0] == "(":
+            resultA.add(callee[1:callee.index(')')])
 
             if callee[1:4] == "080":
                 count080 += 1
